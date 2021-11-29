@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = 'utf-8'>
+<title>Cherry Healthcare</title>
+<p>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<center><img src="imagine\1.jpg" margin="auto" width="220px" height="220px"></img></center>
+<p \>
+  <nav>
+    <div class="topnav" id="myTopnav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About the Healthcare</a>
+    <a href="photo.html">Our Gallery</a>
+    <a href="eventregistration.html"> Event Registration</a>
+    <a href="registration.html">Member Registration</a>
+    <a href="login.html">Admin Login</a>
+</div>
+</nav>
+
+<section>
+<br />
+<div class="entries">
+<div class="h1">Registration Form</div>
+<br />
+<form name="registerForm" action ="Registation/addrecord.php" method="post"
+onsubmit="return confirm('Ready to submit information')"
+onreset="return confirm('Ready to clear the form?')">
+
+<table border=0 cellpadding=5 align="center">
+<tr><td>Full name</td><td><input type="text" name="fullname" size="30" required></td></tr>
+<tr><td>Gender</td><td><input type="radio" name="gender" value="Male" checked>Male
+	<input type="radio" name="gender" value="Female">Female</td></tr>
+<tr><td>Username.:</td><td><input type="text" name="username" size="30" required></td></tr>
+<tr><td>Password.:</td><td><input type="text" name="password" size="30" required></td></tr>
+<tr><td>Contact No.:</td><td><input type="text" name="tel" size="30" required></td></tr>
+<tr><td>E-Mail Address:</td><td><input type="text" name="email" size="30" required></td></tr>
+<tr><td>Remarks</td><td><textarea name="remark" rows="5" cols="30"></textarea></td>
+</tr>
+
+
+<tr><td colspan=2 style="text-align:center">
+<input type="submit" value="submit" name="Sub" 
+        onclick="return Validate(this.form)"/>
+   <input type="reset" value="Reset Form"/></td>
+
+</tr>
+</form>
+</table>
+</div>
+</section>
+
+</body>
+</html>

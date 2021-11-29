@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = 'utf-8'>
+<title>Cherry Healthcare</title>
+<p>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+<center><img src="imagine\1.jpg" margin="auto" width="220px" height="220px"></img></center>
+<p \>
+  <nav>
+    <div class="topnav" id="myTopnav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About the Healthcare</a>
+    <a href="photo.html">Our Gallery</a>
+    <a href="eventregistration.html"> Event Registration</a>
+    <a href="registration.html">Member Registration</a>
+    <a href="login.html">Admin Login</a>
+</div>
+</nav>
+<section>
+<br />
+<div class="entries">
+<div class="h1">Event Registration Form</div>
+<br />
+<form name="registerForm" action ="Oder/add.php" method="post">
+
+    <table border=0 cellpadding=5 align="center">
+        <tr><td>Full name</td><td><input type="text" name="afullname" size="30" required></td></tr>
+        <tr><td>Gender</td><td><input type="radio" name="agender" value="Male" checked>Male
+        	<input type="radio" name="agender" value="Female">Female</td></tr>
+        <tr><td>Date of Birth:</td><td> <input type="date" name="adob"> </td> 
+        <tr><td>Contact No.:</td><td><input type="text" name="atel" size="30" required></td></tr>
+        <tr><td>E-Mail Address:</td><td><input type="text" name="aemail" size="30" required></td></tr>
+        <tr><td>Detail of the event want to registration.:</td><td><input type="text" name="adetailevent" size="30" required></td></tr>
+        <tr><td>Date and time want to delivery.:</td><td>
+        <input type="date" name="dtevent"> <br><br>
+        <button value="submit">Submit</button>
+    </table>
+
+</form>
+</div>
+</section>
+
+</body>
+</html>
